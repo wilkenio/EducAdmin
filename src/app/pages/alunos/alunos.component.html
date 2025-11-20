@@ -1,0 +1,77 @@
+<app-sidebar></app-sidebar>
+<app-top-bar></app-top-bar>
+<main class="main-content">
+    <section class="students-section">
+      <div class="header-actions">
+        <div>
+          <h1>Gerenciamento de Alunos</h1>
+          <p>Gerencie os detalhes dos alunos matriculados na instituição.</p>
+        </div>
+        <button class="btn-primary">+ Adicionar Aluno</button>
+      </div>
+
+      <div class="filters">
+        <input type="text" id="searchInput" placeholder="Buscar aluno por nome...">
+        <select id="filterTurma">
+          <option value="">Todas as Turmas</option>
+          <option value="7º Ano A">7º Ano A</option>
+          <option value="8º Ano B">8º Ano B</option>
+          <option value="9º Ano C">9º Ano C</option>
+        </select>
+        <select id="filterStatus">
+          <option value="">Todos os Status</option>
+          <option value="Ativo">Ativo</option>
+          <option value="Inativo">Inativo</option>
+          <option value="Atrasado">Atrasado</option>
+        </select>
+      </div>
+
+      <table class="students-table">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Turma</th>
+            <th>Status</th>
+            <th>Contato</th>
+            <th>Email</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="studentsBody">
+          <tr>
+            <td>Maria Silva</td>
+            <td>7º Ano A</td>
+            <td><span class="badge ativo">Ativo</span></td>
+            <td>91234-5678</td>
+            <td>mariaemail.com</td>
+            <td>
+              <button class="btn-edit">✏️</button>
+              <button class="btn-delete">🗑️</button>
+            </td>
+          </tr>
+          <tr>
+            <td>João Santos</td>
+            <td>8º Ano B</td>
+            <td><span class="badge atrasado">Atrasado</span></td>
+            <td>91321-8888</td>
+            <td>joaoemail.com</td>
+            <td>
+              <button class="btn-edit">✏️</button>
+              <button class="btn-delete">🗑️</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Ana Costa</td>
+            <td>9º Ano C</td>
+            <td><span class="badge inativo">Inativo</span></td>
+            <td>95555-3322</td>
+            <td>email.com</td>
+            <td>
+              <button class="btn-edit">✏️</button>
+              <button class="btn-delete">🗑️</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>

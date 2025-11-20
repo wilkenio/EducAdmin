@@ -1,0 +1,149 @@
+
+
+
+/* ==== CONFIGURAÇÃO GERAL ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  background: #f4f6fa;
+  color: #333;
+}
+
+/* ==== MAIN ==== */
+.main-content {
+  flex: 1;
+  padding: 20px 30px;
+}
+
+/* ==== TOPBAR ==== */
+
+
+/* ==== SEÇÃO DE ALUNOS ==== */
+.students-section {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header-actions h1 {
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+}
+
+.header-actions p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #0056c7;
+}
+
+/* ==== FILTROS ==== */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters input,
+.filters select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+}
+
+/* ==== TABELA ==== */
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.students-table thead {
+  background: #f4f6fa;
+}
+
+.students-table th,
+.students-table td {
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.students-table th {
+  color: #555;
+  font-weight: 600;
+}
+
+.students-table tr:hover {
+  background: #f9fbff;
+}
+
+/* ==== STATUS ==== */
+.badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge.ativo {
+  background: #d4edda;
+  color: #155724;
+}
+
+.badge.inativo {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.badge.atrasado {
+  background: #fff3cd;
+  color: #856404;
+}
+
+/* ==== BOTÕES DE AÇÃO ==== */
+.btn-edit,
+.btn-delete {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 8px;
+}
+
+.btn-edit:hover {
+  color: #007bff;
+}
+
+.btn-delete:hover {
+  color: #dc3545;
+}
+

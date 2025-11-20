@@ -17,16 +17,21 @@
         <a [routerLink]="'/dashboard'"><i class="bi bi-grid-fill"></i>
           <label class="text-menu">Dashboard</label></a>
       </li>
+    </div>
+    
+     <div >
       <li routerLinkActive="active" class="itens-menu">
-        <a [routerLink]="'/usuario'"><i class="bi bi-person-fill"></i>
-          <label class="text-menu">Usuário</label></a>
+        <a [routerLink]="'/alunos'"><i class="bi bi-grid-fill"></i>
+          <label class="text-menu">Alunos</label></a>
       </li>
     </div>
-    <li 
-      routerLinkActive="active" class="itens-menu">
-      <a [routerLink]="'/notificacao'"><i class="bi bi-bell"></i>
-        <label class="text-menu">Notificação</label></a>
-    </li>
+
+    <div >
+      <li routerLinkActive="active" class="itens-menu">
+        <a [routerLink]="'/atividades'"><i class="bi bi-grid-fill"></i>
+          <label class="text-menu">Atividades</label></a>
+      </li>
+    </div>
 
   </ul>
   <div class="usuario">
