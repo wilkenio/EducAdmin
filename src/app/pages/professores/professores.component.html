@@ -1,0 +1,107 @@
+<app-sidebar></app-sidebar>
+<app-top-bar></app-top-bar>
+<main class="content">
+
+    <!-- Conteúdo -->
+    <section class="page-content">
+      <h1>Gerenciamento de Professores</h1>
+
+      <!-- Formulário -->
+      <section class="form-section">
+        <h2><i class="bi bi-plus-lg"></i> Adicionar Novo Professor</h2>
+
+        <form id="formProfessor">
+          <div class="form-grid">
+            <div>
+              <label>Nome Completo:</label>
+              <input type="text" id="nomeProfessor" required>
+            </div>
+            <div>
+              <label>Email:</label>
+              <input type="email" id="emailProfessor" required>
+            </div>
+            <div>
+              <label>Telefone:</label>
+              <input type="text" id="telefoneProfessor" placeholder="(xx) xxxxx-xxxx">
+            </div>
+            <div>
+              <label>Qualificação:</label>
+              <input type="text" id="qualificacaoProfessor" placeholder="Ex: Doutorado em Matemática">
+            </div>
+            <div>
+              <label>Matéria / Departamento:</label>
+              <input type="text" id="materiaProfessor" placeholder="Ex: Matemática, Linguagens...">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" id="professorAtivo" checked> Professor Ativo</label>
+            </div>
+          </div>
+
+              <label>Biografia</label>
+          <textarea id="biografiaProfessor" placeholder="Escreva uma breve biografia do professor..."></textarea>
+
+
+          <div class="form-buttons">
+            <button type="reset" class="btn-secondary">Cancelar</button>
+            <button type="submit" class="btn-primary">Adicionar Professor</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Filtros -->
+      <section class="filter-section">
+        <h2>Buscar e Filtrar</h2>
+        <div class="filter-grid">
+          <input type="text" id="buscarProfessor" placeholder="Buscar professor por nome ou email...">
+          <select id="filtroMateria">
+            <option value="">Todas as Matérias</option>
+            <option value="Matemática">Matemática</option>
+            <option value="Português">Português</option>
+            <option value="Ciências">Ciências</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Tabela -->
+      <section class="table-section">
+        <h2>Professores Cadastrados</h2>
+        <table id="tabelaProfessores">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Email</th>
+              <th>Telefone</th>
+              <th>Matéria</th>
+              <th>Departamento</th>
+              <th>Status</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bruno Dias</td>
+              <td>brunoescola.com</td>
+              <td>(11) 99999-1111</td>
+              <td>Matemática</td>
+              <td>Ciências Exatas</td>
+              <td><span class="status ativo">Ativo</span></td>
+              <td>
+                <button class="view"><i class="bi bi-eye"></i></button>
+                <button class="edit"><i class="bi bi-pencil-square"></i></button>
+                <button class="delete"><i class="bi bi-trash"></i></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </section>
+  </main>
+
+  <!-- Modal de Biografia -->
+  <div class="modal" id="modalBiografia">
+  <div class="modal-content">
+    <span class="close" id="fecharModal">&times;</span>
+    <h3>Biografia do Professor</h3>
+    <p id="textoBiografia"></p>
+  </div>
+</div>

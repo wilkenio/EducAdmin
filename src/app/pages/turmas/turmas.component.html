@@ -1,0 +1,48 @@
+<app-sidebar></app-sidebar>
+<app-top-bar></app-top-bar>
+<main class="main-content">
+
+    <section class="students-section">
+      <div class="header-actions">
+        <div>
+          <h1>Gerenciamento de Turmas</h1>
+          <p>Visualize, edite e gerencie as turmas da instituição.</p>
+        </div>
+        <button class="btn-primary" id="btnAddTurma">+ Adicionar Turma</button>
+      </div>
+
+      <div class="cards-container" id="listaTurmas"></div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="modalTurma">
+    <div class="modal-content">
+      <h2 id="modalTitulo">Adicionar Turma</h2>
+      <form id="formTurma">
+        <input type="hidden" id="turmaId">
+        <label>Nome da Turma</label>
+        <input type="text" id="nomeTurma" required>
+
+        <label>Professor Responsável</label>
+        <input type="text" id="professorTurma" required>
+
+        <label>Horário</label>
+        <input type="text" id="horarioTurma" required>
+
+        <label>Status</label>
+        <select id="statusTurma">
+          <option value="Ativa">Ativa</option>
+          <option value="Encerrada">Encerrada</option>
+        </select>
+
+        <label>Número de Alunos</label>
+        <input type="number" id="alunosTurma" min="0" required>
+
+        <div class="modal-buttons">
+          <button type="button" id="btnCancelar">Cancelar</button>
+          <button type="submit" class="btn-primary">Salvar</button>
+        </div>
+      </form>
+    </div>
+  </div>

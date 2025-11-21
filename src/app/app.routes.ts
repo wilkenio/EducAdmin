@@ -7,6 +7,10 @@ import { EsquecisenhaComponent} from './pages/esquecisenha/esquecisenha.componen
 import { RedefinirsenhaComponent} from './pages/redefinirsenha/redefinirsenha.component';
 import { AlunosComponent} from './pages/alunos/alunos.component';
 import { AtividadesComponent } from './pages/atividades/atividades.component';
+import { NotasComponent } from './pages/notas/notas.component';
+import { ProfessoresComponent } from './pages/professores/professores.component';
+import { TurmasComponent } from './pages/turmas/turmas.component';
+import { RelatoriosComponent } from './pages/relatorios/relatorios.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -20,6 +24,10 @@ export const routes: Routes = [
   { path: 'redefinirsenha', component: RedefinirsenhaComponent},
   { path: 'alunos', component: AlunosComponent},
   { path: 'atividades', component: AtividadesComponent},
+  { path: 'notas', component: NotasComponent},
+  { path: 'professores', component: ProfessoresComponent},
+  { path: 'turmas', component: TurmasComponent},
+  { path: 'relatorios', component: RelatoriosComponent},
 
 
   // Rota coringa para redirecionar caso o usuário tente acessar uma página inexistente

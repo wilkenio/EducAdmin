@@ -1,11 +1,14 @@
+/* ======== ESTRUTURA GERAL (MESMA DAS OUTRAS PÁGINAS) ======== */
 
-/* ======== GERAL ======== */
+.main-content {
+  padding: 20px 30px;
+}
 
 .students-section {
   padding: 30px;
 }
 
-/* ======== HEADER E BOTÃO AZUL ======== */
+/* ======== HEADER ======== */
 
 .header-actions {
   display: flex;
@@ -24,7 +27,10 @@
   font-size: 0.95rem;
 }
 
-.btn-add {
+/* ======== BOTÕES ======== */
+
+.btn-add,
+.btn-primary {
   background: #0d6efd;
   color: #fff;
   padding: 10px 18px;
@@ -35,8 +41,18 @@
   transition: 0.2s;
 }
 
+.btn-primary:hover,
 .btn-add:hover {
   background: #0857c7;
+}
+
+.btn-secondary {
+  background: #ccc;
+  color: #222;
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
 }
 
 /* ======== FILTROS ======== */
@@ -45,6 +61,7 @@
   display: flex;
   gap: 15px;
   margin-bottom: 25px;
+  flex-wrap: wrap;
 }
 
 .filters-bar input,
@@ -55,7 +72,29 @@
   background: #fff;
 }
 
-/* ======== CARD DA TABELA ======== */
+/* ======== TABS ======== */
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  background: #f2f2f2;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.tab.active {
+  background: #0d6efd;
+  color: #fff;
+}
+
+/* ======== CARD ======== */
 
 .table-card {
   background: #ffffff;
@@ -64,12 +103,11 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-/* ==== TABELA ==== */
+/* ======== TABELA ======== */
+
 .students-table {
   width: 100%;
   border-collapse: collapse;
-  border-radius: 10px;
-  overflow: hidden;
 }
 
 .students-table thead {
@@ -83,29 +121,9 @@
   border-bottom: 1px solid #eee;
 }
 
-.students-table th {
-  color: #555;
-  font-weight: 600;
-}
-
 .students-table tr:hover {
   background: #f9fbff;
 }
-
-/* ======== BADGES ======== */
-
-.badge {
-  padding: 5px 12px;
-  border-radius: 20px;
-  font-size: 12px;
-  color: #fff;
-}
-
-.pendente { background: #e74c3c; }
-.andamento { background: #3498db; }
-.concluido { background: #2ecc71; }
-
-/* ======== AÇÕES ======== */
 
 .btn-edit,
 .btn-delete {
@@ -115,4 +133,17 @@
   font-size: 18px;
 }
 
+/* ======== BADGES ======== */
+
+.badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.andamento { background: #3498db; }
+.pendente { background: #e74c3c; }
+.concluido { background: #2ecc71; }
 

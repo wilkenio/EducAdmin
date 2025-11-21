@@ -1,109 +1,102 @@
 <app-sidebar></app-sidebar>
 <app-top-bar></app-top-bar>
-  <main class="main-content">
-    <!-- PAINEL DE ATIVIDADES -->
-    <section class="students-section">
-      <div class="header-actions">
-        <div>
-          <h1>Painel de Atividades</h1>
-          <p>Visualize, filtre e cadastre novas atividades.</p>
-        </div>
+
+<main class="main-content">
+
+  <section class="students-section">
+
+    <!-- TÍTULO E BOTÃO - IGUAL A PAGINA DE ALUNOS -->
+    <div class="header-actions">
+      <div>
+        <h1>Gerenciamento de Atividades</h1>
+        <p>Gerencie e acompanhe todas as atividades cadastradas na instituição.</p>
       </div>
 
-      <!-- CARDS DE RESUMO -->
-      <div class="cards">
-        <div class="card">
-          <h3>Total de Atividades</h3>
-          <p class="value">0</p>
-          <small>+20% desde o mês passado</small>
-        </div>
-        <div class="card">
-          <h3>Atividades Pendentes</h3>
-          <p class="value">0</p>
-          <small>2 novas esta semana</small>
-        </div>
-        <div class="card">
-          <h3>Concluídas no Prazo</h3>
-          <p class="value">85%</p>
-          <small>+5% comparado à média</small>
-        </div>
-        <div class="card">
-          <h3>Alunos Ativos</h3>
-          <p class="value">320</p>
-          <small>com acesso ao portal</small>
-        </div>
-      </div>
+      <button class="btn-add">+ Cadastrar Atividade</button>
+    </div>
 
-      <!-- BOTÕES -->
-      <div class="actions-bar">
-        <button class="btn-primary">+ Cadastrar Nova Atividade</button>
-        <div class="filters-inline">
-          <button class="btn-secondary">Filtrar</button>
-          <button class="btn-secondary">Exportar</button>
-          <select>
-            <option>Todos os status</option>
-            <option>Pendente</option>
-            <option>Em andamento</option>
-            <option>Concluído</option>
-          </select>
-          <select>
-            <option>Todas as disciplinas</option>
-            <option>Matemática</option>
-            <option>Português</option>
-            <option>História</option>
-            <option>Ciências</option>
-          </select>
-          <select>
-            <option>Todas as turmas</option>
-            <option>6º Ano</option>
-            <option>7º Ano</option>
-            <option>8º Ano</option>
-          </select>
-        </div>
-      </div>
+    <!-- FILTROS - IGUAL AO MODELO DOS ALUNOS -->
+    <div class="filters-bar">
+      <input type="text" placeholder="Buscar atividade..." />
 
-      <!-- TABELA DE ATIVIDADES -->
-      <div class="table-card">
-        <h2>Atividades Recentes</h2>
-        <p>Gerencie e acompanhe o progresso das atividades escolares.</p>
-        <table class="students-table">
-          <thead>
-            <tr>
-              <th>Atividade</th>
-              <th>Prazo</th>
-              <th>Disciplina</th>
-              <th>Turma</th>
-              <th>Status</th>
-              <th>Ações</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Relatório Final de História</td>
-              <td>25/06/2024</td>
-              <td>História</td>
-              <td>8º Ano</td>
-              <td><span class="badge pendente">Pendente</span></td>
-              <td><button class="btn-edit">✏️</button><button class="btn-delete">🗑️</button></td>
-            </tr>
-            <tr>
-              <td>Trabalho de Grupo de Matemática</td>
-              <td>20/06/2024</td>
-              <td>Matemática</td>
-              <td>6º Ano</td>
-              <td><span class="badge andamento">Em andamento</span></td>
-              <td><button class="btn-edit">✏️</button><button class="btn-delete">🗑️</button></td>
-            </tr>
-            <tr>
-              <td>Apresentação de Projeto de Biologia</td>
-              <td>15/06/2024</td>
-              <td>Biologia</td>
-              <td>7º Ano</td>
-              <td><span class="badge concluido">Concluído</span></td>
-              <td><button class="btn-edit">✏️</button><button class="btn-delete">🗑️</button></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-  </main>
+      <select>
+        <option>Todos os Status</option>
+        <option>Pendente</option>
+        <option>Em andamento</option>
+        <option>Concluído</option>
+      </select>
+
+      <select>
+        <option>Todas as Disciplinas</option>
+        <option>Matemática</option>
+        <option>Português</option>
+        <option>História</option>
+        <option>Biologia</option>
+      </select>
+
+      <select>
+        <option>Todas as Turmas</option>
+        <option>6º Ano</option>
+        <option>7º Ano</option>
+        <option>8º Ano</option>
+      </select>
+    </div>
+
+    <!-- CARD DA TABELA - IGUAL AO DOS ALUNOS -->
+    <div class="table-card">
+      <table class="students-table">
+        <thead>
+          <tr>
+            <th>Atividade</th>
+            <th>Prazo</th>
+            <th>Disciplina</th>
+            <th>Turma</th>
+            <th>Status</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Relatório Final de História</td>
+            <td>25/06/2024</td>
+            <td>História</td>
+            <td>8º Ano</td>
+            <td><span class="badge pendente">Pendente</span></td>
+            <td>
+              <button class="btn-edit"><i class="bi bi-pencil-square"></i></button>
+              <button class="btn-delete"><i class="bi bi-trash"></i></button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Trabalho de Grupo de Matemática</td>
+            <td>20/06/2024</td>
+            <td>Matemática</td>
+            <td>6º Ano</td>
+            <td><span class="badge andamento">Em andamento</span></td>
+            <td>
+              <button class="btn-edit"><i class="bi bi-pencil-square"></i></button>
+              <button class="btn-delete"><i class="bi bi-trash"></i></button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Apresentação de Projeto de Biologia</td>
+            <td>15/06/2024</td>
+            <td>Biologia</td>
+            <td>7º Ano</td>
+            <td><span class="badge concluido">Concluído</span></td>
+            <td>
+              <button class="btn-edit"><i class="bi bi-pencil-square"></i></button>
+              <button class="btn-delete"><i class="bi bi-trash"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+</main>
+

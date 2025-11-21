@@ -1,0 +1,83 @@
+<app-sidebar></app-sidebar>
+<app-top-bar></app-top-bar>
+  <main class="main-content">
+
+  <section class="students-section">
+
+    <!-- CABEÇALHO PADRÃO -->
+    <div class="header-actions">
+      <div>
+        <h1>Gerenciamento de Notas</h1>
+        <p>Visualize, cadastre e edite notas dos alunos.</p>
+      </div>
+
+      <button class="btn-add">+ Adicionar Nota</button>
+    </div>
+
+    <!-- FILTROS PADRÃO IGUAL ATIVIDADES -->
+    <div class="filters-bar">
+      <select>
+        <option>Selecionar aluno...</option>
+      </select>
+
+      <select>
+        <option>Selecionar disciplina...</option>
+      </select>
+
+      <input type="number" placeholder="Nota (0-10)" />
+
+      <input type="date" />
+
+      <input type="text" placeholder="Comentário (opcional)" />
+
+      <button class="btn-primary">Adicionar</button>
+      <button class="btn-secondary">Limpar</button>
+    </div>
+
+    <!-- TABS PADRONIZADAS EM CARD -->
+    <div class="table-card">
+
+      <div class="tabs">
+        <button class="tab active">Notas Recentes</button>
+        <button class="tab">Desempenho</button>
+        <button class="tab">Comentários</button>
+      </div>
+
+      <div class="tab-content">
+
+        <!-- CONTEÚDO: NOTAS RECENTES -->
+        <div>
+          <table class="students-table">
+            <thead>
+              <tr>
+                <th>Disciplina</th>
+                <th>Nota</th>
+                <th>Data</th>
+                <th>Comentário</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Matemática</td>
+                <td><span class="badge andamento">8.5</span></td>
+                <td>10/02/2024</td>
+                <td>Bom desempenho</td>
+                <td>
+                  <button class="btn-edit"><i class="bi bi-pencil-square"></i></button>
+                  <button class="btn-delete"><i class="bi bi-trash"></i></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+
