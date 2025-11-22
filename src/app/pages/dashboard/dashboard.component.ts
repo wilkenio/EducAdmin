@@ -2,14 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SideBarComponent } from '../../shared/components/side-bar/side-bar.component';
 import { BannerComponent } from '../../shared/components/banner/banner.component';
-
+import { TopBarComponent } from '../../shared/components/top-bar/top-bar.component';
 import { ApiDashboardService } from '../../core/services/ApiDashboard/ApiDashboard.service';
 import { AlertService } from '../../core/services/alertService/alert.service';
 import { AlertComponent } from '../../shared/components/alert/alert.component';
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [CommonModule, SideBarComponent, BannerComponent, AlertComponent],
+  imports: [CommonModule, SideBarComponent, TopBarComponent, BannerComponent, AlertComponent],
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
