@@ -80,7 +80,7 @@ nav ul li {
     padding: 12px 10px;
     transition: 0.3s;
     cursor: pointer;
-    color: #aaa;
+    color: var(--cor-21);
     font-size: 14px;
     -webkit-border-top-right-radius: 10px;
     -webkit-border-bottom-right-radius: 10px;
@@ -94,14 +94,14 @@ nav ul li {
 
 nav ul li.active,
 nav ul li:hover {
-    background: white;
+    background: var(--cor-15);
 }
 
 nav ul li.active i,
 nav ul li:hover i,
 nav ul li.active label,
 nav ul li:hover label {
-    color: var(--cor-4);
+    color: var(--cor-19);
 }
 
 nav ul li a {
@@ -147,7 +147,7 @@ nav ul li i {
 
 .usuario-icon i {
     font-size: 2rem;
-    color: #3c1d75;
+    color: var(--cor-19);
 }
 
 .usuario .nome {
@@ -184,7 +184,7 @@ nav ul li i {
 
 #icon-hambur {
     border: 1px solid #b8b8b8;
-    color: var(--cor-1);
+    color: var(--cor-19);
     border-radius: 100px;
     width: 15px;
     padding: 4px;

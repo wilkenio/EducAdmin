@@ -8,7 +8,7 @@
     /* Começa oculto */
     justify-content: center;
     align-items: center;
-    background: rgb(118, 0, 173);
+    background: var(--cor-1);
     /* Opacidade de fundo */
     z-index: 99999;
     flex-direction: column;
@@ -38,7 +38,7 @@
   .spinner {
     width: 20px;
     height: 20px;
-    border: 5px solid #f3f3f3;
+    border: 5px solid var(--cor-21);
     border-top: 5px solid var(--cor-5);
     border-radius: 50%;
     animation: spin 1s linear infinite;
